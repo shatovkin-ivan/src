@@ -1,0 +1,112 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 255px;
+    width: 100%;
+    height: 68px;
+    font-size: 14px;
+    font-weight: 700;
+    color: $white-color;
+    text-transform: uppercase;
+    background-color: $blue-color;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    transition: .3s color linear, .3s border-color linear, .3s background-color linear;
+    cursor: pointer;
+    &_transparent  {
+        background-color: transparent;
+        border: 2px solid #D6D6D6;
+    }
+    &_menu {
+        max-width: 175px;
+        height: 65px;
+    }
+    &_main {
+        max-width: 380px;
+        height: 80px;
+        color: $secondary-black-color;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .btn {
+        max-width: 236px;
+        height: 60px;
+        &_menu {
+            max-width: 165px;
+            height: 60px;
+        }
+        &_main {
+            max-width: 290px;
+            height: 66px;
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .btn {
+        max-width: 217px;
+        height: 56px;
+        &_menu {
+            height: 56px;
+        }
+        &_main {
+            max-width: 248px;
+            height: 60px;
+            font-size: 14px;
+        }
+        &_calculate {
+            max-width: 135px;
+            height: 48px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .btn {
+        &_menu {
+            display: none;
+        }
+        &_main {
+            max-width: 248px;
+        }
+        &_calculate {
+            margin-left: auto;
+            max-width: 220px;
+            height: 48px;
+        }
+        &_mobile {
+            max-width: 220px;
+            height: 56px;
+            margin: 140px auto 0 auto;
+            color: $blue-color;
+            background-color: transparent;
+            border: 2px solid $blue-color;
+        }
+    }
+}
+@media screen and (max-width: 545px) {
+    .btn {
+        max-width: 290px;
+        &_main {
+            max-width: 290px;
+            width: 100%;
+        }
+        &_mobile {
+            margin-top: 0;
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .btn_mobile {
+        display: none;
+    }
+}
+@media screen and (max-height: 568px) {
+    .btn {
+        &_main {
+            min-height: 60px;
+        }
+    }
+}
